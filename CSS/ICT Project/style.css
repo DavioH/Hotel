@@ -1,0 +1,57 @@
+@font-face{
+    font-family: CustomFont;
+    src: url(Font/Font.ttf);
+}
+*{
+ font-family: CustomFont;
+ color: white;
+}
+#container{
+ margin: 0px auto; 
+ padding: 10px; 
+ width: 1000px;
+ background-repeat: no-repeat;
+ background-color: rgba(5, 0, 0, 0.7);
+}
+body{
+	background: url(Background/Lijnen.png);
+	background-color:rgba(15, 0, 0, 0.95);
+}
+p{
+	margin-left:20px;
+	margin-right:20px;
+}
+h1{
+    display: table;
+    white-space: nowrap;
+ text-align: center;
+ text-transform: uppercase;
+ font-weight: bold;
+ font-size: 50px;
+}
+img{
+	margin-left:20px;
+	margin-bottom:20px;
+	border-radius: 20px 20px 20px 20px; border: 5px outset rgb(80, 150, 255);}
+.Inspringen{
+	margin-left:10px;
+}
+h1::before{right: 1.5%;}
+h1::after{left: 1.5%;}
+h1::before, h1::after{
+      border-top: 1px solid white;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 40%;
+}
+#left-side{
+  padding: 0px;
+  display: inline-block;
+}
+#right-side{
+  width: 325px;
+  display: inline-block;
+  vertical-align: top;
+}
